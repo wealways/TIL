@@ -1,4 +1,4 @@
-<img src="HTML_01_making_googleform.assets/HTML.PNG" style="zoom:50%;" />
+<img src="../images/HTML.PNG" style="zoom:50%;" />
 
 # HTML_01_making_googleform
 
