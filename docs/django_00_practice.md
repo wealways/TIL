@@ -10,6 +10,10 @@
 
 ## 구성
 
+- 과정 : index화면에서 정보확인 버튼 클릭  -->  지정해놓은 정보 크롤링  --> html로 보여주기
+
+
+
 📂 first_project
 
 ​	📂 articles
@@ -58,7 +62,7 @@
 
 ### 코드
 
-[깃 허브 코드](http://github.com/wealways/TIL/django)
+[깃 허브 코드](http://github.com/wealways/TIL/django/first_practice)
 
 
 
