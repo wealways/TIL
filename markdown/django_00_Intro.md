@@ -6,7 +6,7 @@
 >
 >MTB 방식입니다 (대부분은 MVC방식!, 이름만 다를뿐 개념은 같다)
 
-<img src="../images/django_mtv.PNG" style="zoom:50%;" />
+<img src="../images/til/django_00_Intro_mtv.PNG" style="zoom:50%;" />
 
 
 

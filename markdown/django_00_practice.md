@@ -44,11 +44,11 @@
 
 첫번째
 
-![](../images/django_first_1.PNG)
+![](../images/til/django_00_practice_1.PNG)
 
 두번째 
 
-![놀랍다..](../images/django_first_2.PNG)
+![놀랍다..](../images/til/django_00_practice_2.PNG)
 
 >놀라운 퀄리티!! 🙄🤣😅👽;; 
 >
