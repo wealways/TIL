@@ -47,24 +47,24 @@
 
 ## 2 Display
 
-**block**
+### 2.1 block
 
 - 쌓이는 박스
 - 요소는 블록 요소 상자를 생성하여 일반 흐름에서 요소 앞뒤에 줄 바꿈을 생성한다.
 - 블록 레벨 요소안에 인라인 레벨 요소가 들어갈 수 있다.
 
-**inline**
+### 2.2 inline
 
 - 줄바꿈이 일어나지 않는 행의 일부 요소
 - content 너비만큼 가로 폭을 차지
 - width, height, margin-top, margin-bottom을 지정할 수 없음
 - 상하 여백은 line-height로 지정
 
-**inline-block**
+### 2.3 inline-block
 
 - inline 처럼 텍스트 흐름대로 나열, block처럼 박스 형태이기 block 속성 사용가능.
 
-**none**
+### 2.4 none
 
 - 해당 요소를 화면에서 사라지게 하며 요소의 공간조차 사라지게 한다.
 - `visibility: hidden;`은 해당 요소를 화면에서 사라지게는 하나 공간은 사라지지 않는다.
