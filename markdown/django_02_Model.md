@@ -128,7 +128,11 @@ $ python manage.py showmigrations
 
 > sqlite 설치 : vscode 내에서 db구성을 쉽게 보여주는 확장파일
 
+
+
 # --------------------------------
+
+
 
 # 개념
 
