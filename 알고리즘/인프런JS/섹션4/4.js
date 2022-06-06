@@ -1,31 +1,20 @@
 const sol = (arr,target) => {
-  let answer 
+  let answer = 0
+  // 정렬이 필요하다.
   arr.sort((a,b)=>(a[0]+a[1]-(b[0]+b[1])))
   for(let i=0;i<arr.length;i++){
-    let price = Number.MIN_SAFE_INTEGER
-    let temp = [0,0]
-    let sumV = 0
+    let money = target - (arr[i][0]/2 + arr[i][1])
+    let cnt = 1
     for(let j=0;j<arr.length;j++){
-      let tempSumV = temp[0]
-      if(i==j){
-        tempSumV= sumV + arr[j][0] /2
-      }else{
-        tempSumV= sumV + arr[j][0]
-      }
-      tempSumV = sumV + arr[j][1]
-      if(tempSumV<=target){
-        sumV = tempSumV
-        temp[0]=sumV
-        temp[1]+=1
-      }else{
-        break
+      if(i!=j && arr[j][0]+arr[j][1]>money) break
+      if(i!=j && arr[j][0]+arr[j][1]<=money) {
+        money -= arr[j][0]+arr[j][1]
+        cnt+=1
       }
     }
-    console.log(temp)
-    console.log(answer)
-    console.log('---')
-    if(price<=temp[0]) answer=temp
+    answer = Math.max(answer,cnt)
   }
+
   return answer
 } 
 
