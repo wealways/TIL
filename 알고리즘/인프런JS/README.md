@@ -16,7 +16,7 @@
 8. reduce((acc,v)=>acc+v,0) 활용, 간단한 수학
 9. for(let a of arr) -> arr의 값 / for(let a in arr) -> arr의 index / arr.replace(reg,'변경값')
 10. split()은 자르는 것
-11. toUpperCase()대문자만들기 / charCodeAt() 문자의 아스키코드 넘겨줌 65부터 90는 대문자 / 97부터122
+11. toUpperCase()대문자만들기 / charCodeAt() 문자의 아스키코드 넘겨줌 65부터 90는 대문자 / 97부터122 소문자
 12. String.fromCharCode() 아스키코드에서 문자열로 변환 / toLowerCase()
 13. 11,12 복습
 14. 11,12,13 복습
@@ -38,3 +38,22 @@
 7. dx=[0,0,1,-1], dy=[1,-1,0,0] 상하좌우문제
 
 ## 섹션3: 문자열 탐색
+
+1. index 절반으로 비교 또는 reverse() 활용  
+2. 1번 복습
+
+2022-06-04
+
+3. parseInt() 숫자 변환/ isNaN()
+4. TBD 다시 풀기
+5. 문자 연속되는 거 읽는 법
+
+## 섹샨4: 완전탐색 bruteForce
+
+1. 기초학습
+2. TBD 소수 체크하는 법
+
+2022-06-05
+
+3. TBD 다시 풀기 burteForce 대표문제
+4. 
