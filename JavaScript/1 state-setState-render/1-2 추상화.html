@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="app"></div>
+  <script>
+    class Component {
+      $target;
+      $state;
+      //constructor 메서드는 class 내에서 객체를 생성하고 초기화하기 위한 특별한 메서드입니다.
+      constructor ($target){
+        this.$target = $target
+        this.setup();
+        this.render();
+      }
+
+      setup() {};
+      template () {return '';}
+      render () {
+        this.$target.innerHTML = this.template();
+        this.setEvent();
+      }
+      setEvent () {}
+      setState (newState) {
+        this.$state = {...this.$state,...newState};
+        this.render();
+      }
+    }
+
+    //extends 키워드는 클래스를 다른 클래스의 자식으로 만들기 위해 class 선언 또는 class 식에 사용됩니다.
+    class App extends Component {
+      setup () {
+        this.$state = {items: ['item1','item2']};
+      }
+      template () {
+        const {items} = this.$state
+        return `
+          <ul>
+            ${items.map(item=>`<li>${item}</li>`).join('')}
+          </ul>
+          <button>추가</button>
+        `
+      }
+      setEvent() {
+        this.$target.querySelector('button').addEventListener('click',() => {
+          const {items} = this.$state;
+          this.setState({items:[...items,`item${items.length  + 1}`]});
+        });
+      }
+    }
+
+    new App(document.querySelector('#app'));
+  </script>
+</body>
+</html>
